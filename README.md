@@ -1,73 +1,113 @@
 
-# Car Price Prediction with Machine Learning
+# 🌸 Iris Flower Classification
 
-This project uses machine learning models to predict the price of cars based on several factors like the car's brand, mileage, horsepower, fuel type, and more.
+This project is a simple Machine Learning solution to classify iris flowers into three species — **Setosa**, **Versicolor**, and **Virginica** — based on their sepal and petal measurements.
 
-## Project Overview
+---
 
-The objective of this project is to build a predictive model that estimates the price of a used car based on various features such as:
+## 📚 Project Description
 
-- Year of manufacturing
-- Brand of the car
-- Mileage
-- Fuel type
-- Transmission type
-- And more...
+The Iris dataset is a famous dataset often used in beginner machine learning projects.  
+In this project, we:
 
-### Models Used:
-1. Random Forest Regressor
-2. Linear Regression
+- Load and explore the dataset
+- Visualize relationships between features
+- Train a classification model (Random Forest Classifier)
+- Evaluate model performance
+- Try another model (Linear Regression) for comparison
+- Plot feature importances
+- Save the trained model for future use
 
-The dataset contains details of various cars, and both Random Forest and Linear Regression models were used to predict their prices. The model with the best performance was chosen for predictions.
+---
 
-## Files in this Repository
+## 🛠️ Technologies Used
 
-1. **`car_data.csv`** - The dataset containing the details of various cars used to train the machine learning models.
-2. **`car_price_random_forest_model.pkl`** - The trained Random Forest Regressor model.
-3. **`car_price_linear_regression_model.pkl`** - The trained Linear Regression model.
-4. **`car_price_predictor.py`** - Python script for building, training, and testing the machine learning models.
-5. **`README.md`** - This file.
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Scikit-learn
+- Joblib
 
-## Setup & Installation
+---
 
-1. Clone this repository to your local machine:
-    ```bash
-    git clone <repository-url>
-    ```
+## 📂 Project Structure
 
-2. Navigate to the project directory:
-    ```bash
-    cd <repository-directory>
-    ```
+```
+├── data/
+│   └── Iris.csv
+├── models/
+│   ├── iris_random_forest_model.pkl
+│   └── label_encoder.pkl
+├── notebook/
+│   └── iris_classification.ipynb
+├── README.md
+```
 
-3. Install the required Python libraries:
-    ```bash
-    pip install -r requirements.txt
-    ```
+---
 
-4. Place the dataset (`car_data.csv`) in the appropriate directory.
+## 🚀 How to Run
 
-5. Load the trained models using the `joblib` or `pickle` libraries.
+1. Clone the repository:
 
-## Usage
+   ```bash
+   git clone https://github.com/your-username/iris-flower-classification.git
+   cd iris-flower-classification
+   ```
 
-1. To make predictions using the trained model:
-    ```python
-    from car_price_predictor import predict_price
-    
-    model = 'random_forest'  # or 'linear_regression'
-    features = [year, present_price, driven_kms, fuel_type, transmission_type, owner, brand]
-    predicted_price = predict_price(features, model)
-    print(f"Predicted Price: {predicted_price}")
-    ```
+2. Install required libraries:
 
-2. Alternatively, you can load the model and dataset from the command line.
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-## Contributing
+3. Run the notebook:
 
-If you'd like to contribute to this project, feel free to fork the repository, create a branch, and submit a pull request.
+   Open `iris_classification.ipynb` in Jupyter Notebook or VS Code and run all cells.
 
-## License
+4. Predict on new data:
 
-This project is open source and available under the MIT License.
+   After saving the model, you can load it and make new predictions easily.
 
+---
+
+## 📊 Results
+
+- **Random Forest Classifier Accuracy**: ~96%-100% (depending on random split)
+- **Linear Regression Accuracy**: Lower (since it's not ideal for classification)
+
+Random Forest gave the best performance for this task.
+
+---
+
+## 📦 Model Saving
+
+The trained model and label encoder are saved as `.pkl` files using `joblib`, so they can be easily loaded later for predictions without retraining.
+
+---
+
+## 🔥 Future Work
+
+- Try more classification algorithms (SVM, KNN, Decision Tree)
+- Hyperparameter tuning
+- Build a simple web app to classify flowers
+
+---
+
+## 🧑‍💻 Author
+
+- **Your Name** (replace with your name)
+
+---
+
+## ⭐ Acknowledgements
+
+- Dataset from [Scikit-learn datasets](https://scikit-learn.org/stable/auto_examples/datasets/plot_iris_dataset.html)
+- Inspired by classical ML learning projects
+
+---
+
+# 📝 License
+
+This project is open source and free to use under the [MIT License](LICENSE).
