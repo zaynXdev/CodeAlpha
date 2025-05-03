@@ -93,11 +93,6 @@ The trained model and label encoder are saved as `.pkl` files using `joblib`, so
 - Hyperparameter tuning
 - Build a simple web app to classify flowers
 
----
-
-## 🧑‍💻 Author
-
-- **Your Name** (replace with your name)
 
 ---
 
