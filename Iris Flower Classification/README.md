@@ -95,12 +95,6 @@ The trained model and label encoder are saved as `.pkl` files using `joblib`, so
 
 ---
 
-## 🧑‍💻 Author
-
-- **Your Name** (replace with your name)
-
----
-
 ## ⭐ Acknowledgements
 
 - Dataset from [Scikit-learn datasets](https://scikit-learn.org/stable/auto_examples/datasets/plot_iris_dataset.html)
